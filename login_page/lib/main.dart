@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+
 main() {
   runApp(MyApp());
 }
@@ -39,9 +40,9 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: TextField(
               decoration:  InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'UserName',
-                hintText: "Enter a valid email id"
+                  border: OutlineInputBorder(),
+                  labelText: 'UserName',
+                  hintText: "Enter a valid email id"
               ),
             ),
           ),
@@ -52,9 +53,9 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: TextField(
               decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Password',
-                hintText: 'Enter your password'
+                  border: OutlineInputBorder(),
+                  labelText: 'Password',
+                  hintText: 'Enter your password'
               ),
             ),
           ),
@@ -77,7 +78,7 @@ class Home extends StatelessWidget {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18),
+                  borderRadius: BorderRadius.circular(18),
                 ),
               ),
               onPressed: (){}, child: Text('Login',

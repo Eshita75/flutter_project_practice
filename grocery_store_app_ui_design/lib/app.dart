@@ -8,6 +8,20 @@ class GroceryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SplashScreen(),
+      theme: buildThemeData(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+
+  ThemeData buildThemeData() {
+    return ThemeData(
+      textTheme: TextTheme(
+        titleLarge: TextStyle(
+            color: Colors.blue,
+            fontSize: 35,
+            fontWeight: FontWeight.bold
+        )
+      )
     );
   }
 }
